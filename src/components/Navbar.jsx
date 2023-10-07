@@ -13,7 +13,7 @@ const Navbar = () => {
   );
 
   return (
-    <nav className="shadow-lg bg-blue-100">
+    <nav className="drop-shadow-lg  bg-blue-100">
       <div className="navbar bg-blue-100 container py-5 mx-auto font-poppins">
         <div className="navbar-start">
           <div className="dropdown">

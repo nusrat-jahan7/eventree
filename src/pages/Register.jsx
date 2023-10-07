@@ -3,7 +3,8 @@ import logo from "/public/logo.png"
 
 const Register = () => {
   return (
-    <div className="w-full my-20 max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+    <div className="bg-gray-100 py-20">
+      <div className="w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
       <div className="px-6 py-4">
         <div className="flex justify-center mx-auto">
           <img
@@ -48,6 +49,7 @@ const Register = () => {
           </div>
         </form>
       </div>
+    </div>
     </div>
   );
 };

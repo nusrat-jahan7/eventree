@@ -4,7 +4,8 @@ import logo from "/public/logo.png"
 
 const Login = () => {
   return (
-    <div className="w-full my-20 max-w-sm p-6 m-auto mx-auto bg-white font-poppins rounded-lg shadow-lg dark:bg-gray-800">
+    <div className="bg-gray-100 py-20">
+      <div className="w-full max-w-sm p-6 m-auto mx-auto bg-white font-poppins rounded-lg shadow-lg dark:bg-gray-800">
       <div className="flex justify-center mx-auto">
         <img
           className="w-auto h-7 sm:h-8"
@@ -90,6 +91,7 @@ const Login = () => {
           Create One
         </Link>
       </p>
+    </div>
     </div>
   );
 };

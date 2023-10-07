@@ -7,6 +7,7 @@ import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
+import ServiceDetails from "../pages/ServiceDetails";
 
 export const router = createBrowserRouter([
   {
@@ -19,7 +20,13 @@ export const router = createBrowserRouter([
       },
       {
         path: "/services",
+        loader: () => fetch ("/services.json"),
         element: <Services />,
+      },
+      {
+        path: "/service-details/:id",
+        loader: () => fetch ("/services.json"),
+        element: <ServiceDetails/>,
       },
       {
         path: "/gallery",
