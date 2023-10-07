@@ -1,0 +1,209 @@
+[
+  {
+    "id": 1,
+    "category": "Wedding",
+    "title": "Elegant Beach Wedding",
+    "description": "Celebrate your love with a romantic beach wedding. Exchange vows with the sound of waves in the background and enjoy a splendid sunset reception.",
+    "price": 5000,
+    "features": [
+      "Professional photography",
+      "Beachside decor",
+      "Live music",
+      "Gourmet catering"
+    ]
+  },
+  {
+    "id": 2,
+    "category": "Birthday",
+    "title": "Superhero Themed Birthday Bash",
+    "description": "Make your child's birthday unforgettable with a superhero-themed party. Let the kids embrace their favorite characters and enjoy a day of heroic adventures.",
+    "price": 800,
+    "features": [
+      "Themed decorations",
+      "Superhero costume rental",
+      "Games",
+      "Delicious cakes"
+    ]
+  },
+  {
+    "id": 3,
+    "category": "Anniversary",
+    "title": "Golden Years Celebration",
+    "description": "Mark your milestone anniversary with a grand celebration. Rekindle your love story with a night of elegance, romantic ambiance, and heartwarming speeches.",
+    "price": 3000,
+    "features": [
+      "Elegant venue",
+      "Personalized decor",
+      "Live band",
+      "Gourmet dinner"
+    ]
+  },
+  {
+    "id": 4,
+    "category": "Baby Shower",
+    "title": "Enchanted Garden Baby Shower",
+    "description": "Welcome your little one with an enchanted garden-themed baby shower. Enjoy the beauty of nature, delightful games, and adorable baby-themed decor.",
+    "price": 600,
+    "features": [
+      "Garden venue",
+      "Floral arrangements",
+      "Themed games",
+      "Baby shower cake"
+    ]
+  },
+  {
+    "id": 5,
+    "category": "Wedding",
+    "title": "Rustic Barn Wedding",
+    "description": "Experience the charm of a rustic barn wedding. Celebrate amidst wooden beams, fairy lights, and the rustic aroma, creating an unforgettable atmosphere.",
+    "price": 4500,
+    "features": [
+      "Barn venue",
+      "Rustic decor",
+      "Country-style buffet",
+      "Acoustic live music"
+    ]
+  },
+  {
+    "id": 6,
+    "category": "Birthday",
+    "title": "Princess Tea Party",
+    "description": "Host a magical princess tea party for your little one's birthday. Let them indulge in a fairy tale world with fancy dresses, tea, and delightful sweets.",
+    "price": 700,
+    "features": [
+      "Princess-themed decor",
+      "Tea sets",
+      "Storybook reading",
+      "Tiaras and wands"
+    ]
+  },
+  {
+    "id": 7,
+    "category": "Anniversary",
+    "title": "Wine and Dine Under the Stars",
+    "description": "Celebrate your anniversary with a romantic evening of wine tasting and fine dining under the stars. Enjoy exquisite wines paired with gourmet dishes.",
+    "price": 2500,
+    "features": [
+      "Outdoor venue",
+      "Wine tasting session",
+      "Candlelit dinner",
+      "Live acoustic music"
+    ]
+  },
+  {
+    "id": 8,
+    "category": "Baby Shower",
+    "title": "Nautical Adventure Baby Shower",
+    "description": "Embark on a nautical adventure for your baby shower. Set sail with anchor-themed decor, sailor outfits, and delightful maritime treats.",
+    "price": 650,
+    "features": [
+      "Nautical decor",
+      "Sailor hats",
+      "Games with sea themes",
+      "Ship-shaped cake"
+    ]
+  },
+  {
+    "id": 9,    
+    "category": "Wedding",
+    "title": "Countryside Romance Wedding",
+    "description": "Experience the tranquility of the countryside with a romantic wedding. Surrounded by rolling hills and blooming flowers, celebrate your love story in nature's embrace.",
+    "price": 4800,
+    "features": [
+      "Outdoor venue",
+      "Floral arch",
+      "Hay bale seating",
+      "Country-style catering"
+    ]
+  },
+  {
+    "id": 10,
+    "category": "Birthday",
+    "title": "Adventure Quest Birthday",    
+    "description": "Embark on an adventure quest for a unique birthday experience. Solve puzzles, conquer challenges, and celebrate victories with your friends.",
+    "price": 900,
+    "features": [
+      "Interactive quests",
+      "Themed challenges",
+      "Treasure hunt",
+      "Adventure-themed cake"
+    ]
+  },
+  {
+    "id": 11,
+    "category": "Anniversary",
+    "description": "Step into a world of mystery and elegance with a masquerade ball anniversary. Dance the night away behind ornate masks, surrounded by opulent decorations.",
+    "price": 3200,
+    "features": [
+      "Masquerade masks",
+      "Ballroom venue",
+      "Live orchestra",
+      "Gourmet banquet"
+    ]
+  },
+  {
+    "id": 12,
+    "category": "Baby Shower",
+    "title": "Safari Adventure Baby Shower",
+    "description": "Embark on a safari adventure for your baby shower. Explore the wilderness with animal-themed decor, safari hats, and wild treats.",
+    "price": 600,
+    "features": [
+      "Animal masks",
+      "Safari jeep photo booth",
+      "Jungle-themed snacks",
+      "Animal-shaped cookies"
+    ]
+  },
+  {
+    "id": 13,
+    "category": "Wedding",
+    "title": "Enchanted Forest Wedding",
+    "description": "Exchange vows in a mystical forest setting. Surrounded by ancient trees and twinkling fairy lights, create a magical ambiance for your wedding day.",
+    "price": 5200,
+    "features": [
+      "Forest clearing venue",
+      "Fairy light canopy",
+      "Woodland-themed decor",
+      "Harmony with nature"
+    ]
+  },
+  {
+    "id": 14,
+    "category": "Birthday",
+    "title": "Space Adventure Birthday",
+    "description": "Blast off into a space-themed adventure for your birthday. Explore distant galaxies, meet aliens, and experience zero-gravity fun.",
+    "price": 950,
+    "features": [
+      "Spaceship photo booth",
+      "Astronaut training activities",
+      "Intergalactic decorations",
+      "Rocket-shaped cake"
+    ]
+  },
+  {
+    "id": 15,
+    "category": "Anniversary",
+    "title": "Vintage Love Anniversary",
+    "description": "Celebrate your enduring love with a vintage-themed anniversary. Travel back in time with retro music, classic cars, and timeless elegance.",
+    "price": 2800,
+    "features": [
+      "Retro music playlist",
+      "Classic car display",
+      "Victorian-era attire",
+      "Nostalgic ambiance"
+    ]
+  },
+  {
+    "id": 16,
+    "category": "Baby Shower",
+    "title": "Whimsical Wonderland Baby Shower",
+    "description": "Enter a whimsical wonderland for your baby shower. Explore a world of fantasy with fairies, unicorns, and delightful magical surprises.",
+    "price": 700,
+    "features": [
+      "Fairy garden setting",
+      "Unicorn-themed decor",
+      "Enchanted forest atmosphere",
+      "Magic-filled celebration"
+    ]
+  }
+]
