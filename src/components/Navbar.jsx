@@ -39,15 +39,6 @@ const Navbar = () => {
           color: isActive ? "#706e75" : "#067c8a",
           textDecorationLine: isActive ? "underline" : "none",
         })}
-        to="/about"
-      >
-        About
-      </NavLink>
-      <NavLink
-        style={({ isActive }) => ({
-          color: isActive ? "#706e75" : "#067c8a",
-          textDecorationLine: isActive ? "underline" : "none",
-        })}
         to="/contact"
       >
         Contact

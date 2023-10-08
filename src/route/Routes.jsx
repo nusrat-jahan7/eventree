@@ -3,7 +3,6 @@ import App from "../App";
 import Home from "../pages/Home";
 import Services from "../pages/Services";
 import Gallery from "../pages/Gallery";
-import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Login from "../pages/Login";
 import ServiceDetails from "../pages/ServiceDetails";
@@ -36,15 +35,11 @@ export const router = createBrowserRouter([
       },
       {
         path: "/gallery",
-        element: <Gallery />,
-      },
-      {
-        path: "/about",
-        element: <About />,
+        element: <PrivateRoute><Gallery /></PrivateRoute> ,
       },
       {
         path: "/contact",
-        element: <Contact />,
+        element: <PrivateRoute><Contact /></PrivateRoute> ,
       },
       {
         path: "/login",

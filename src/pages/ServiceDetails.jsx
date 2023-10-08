@@ -15,9 +15,9 @@ const ServiceDetails = () => {
 
   return (
     <div className="bg-gray-100 font-poppins">
-      <div className="container mx-auto py-10 flex items-center gap-20">
+      <div className="container mx-auto py-10 lg:flex items-center gap-20">
         <img className="w-fit h-96" src={image} alt="" />
-        <div>
+        <div className="p-6">
             <div className="space-x-4">
             <button className="btn btn-sm hover:bg-cyan-800 bg-cyan-700 text-white">{category}</button>
             <button className="btn btn-sm hover:bg-cyan-800 bg-cyan-700 text-white">$ {price}</button>

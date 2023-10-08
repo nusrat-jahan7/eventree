@@ -13,12 +13,15 @@ const Services = () => {
 
   return (
     <div className="bg-gray-100">
-      <div className="font-poppins container mx-auto">
-        <h1 className="text-4xl font-semibold text-cyan-700 text-center pt-10">
-          The Numbers of Social Events We Offer : {events?.length}
+      <div className="font-poppins container mx-auto pt-16">
+        <h1 className="lg:text-4xl text-3xl font-semibold text-cyan-700 text-center ">
+          The Social Events We Offer : {events?.length}
         </h1>
+        <p className="mx-auto hidden lg:block text-center leading-7 pt-10 pb-5 w-3/4">
+        Our services are designed to transform your events into unforgettable experiences. From weddings to birthdays, anniversaries to baby showers, we specialize in curating exceptional moments tailored to your unique vision. Our team of dedicated professionals ensures every detail is meticulously planned, offering a seamless and stress-free event planning experience.
+        </p>
 
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6 py-10">
+        <div className="grid p-4 lg:p-0 lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6 lg:py-10">
           {events?.map((service) => (
             <Service key={service.id} service={service}></Service>
           ))}

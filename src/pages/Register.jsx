@@ -150,7 +150,7 @@ const Register = () => {
               className="w-full px-6 py-2.5 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-cyan-700 rounded-lg hover:bg-cyan-900 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-50 disabled:bg-cyan-700/50"
             >
               {
-                loading ? "Loading" : "Login"
+                loading ? "Loading" : "Register"
               }
               
             </button>

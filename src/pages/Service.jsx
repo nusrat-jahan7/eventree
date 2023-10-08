@@ -7,7 +7,7 @@ const Service = ({ service }) => {
   const { id, title, price, image, description } = service;
 
   return (
-    <div>
+    <div className="">
       <div className="w-full font-poppins overflow-hidden bg-white rounded-lg shadow-lg">
         <img
           className="object-cover object-center w-full h-56"
