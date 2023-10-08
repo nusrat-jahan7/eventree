@@ -1,8 +1,33 @@
 import { Link } from "react-router-dom";
 import logo from "/public/logo.png"
+import { useContext } from "react";
+import { AuthContext } from "../context/AuthProvider";
 
 
 const Login = () => {
+
+  const {signIn , googleSignIn} = useContext(AuthContext);
+
+const handleEmailLogin = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const email = form.email.value ;
+    const password = form.password.value ;
+
+    signIn(email, password)
+    .then(result => console.log(result.user))
+    .catch(error => console.log(error))
+
+    form.reset();
+}
+
+const handleGoogleSignIn = () => {
+  googleSignIn()
+  .then(result => console.log(result.user))
+  .catch(error => console.log(error))
+}
+
+
   return (
     <div className="bg-gray-100 py-20">
       <div className="w-full max-w-sm p-6 m-auto mx-auto bg-white font-poppins rounded-lg shadow-lg dark:bg-gray-800">
@@ -18,7 +43,7 @@ const Login = () => {
       <h1 className="text-2xl text-cyan-700 font-semibold text-center mt-4">LOGIN</h1>
       </div>
 
-      <form className="mt-6">
+      <form onSubmit={handleEmailLogin} className="mt-6">
         <div>
           <label
             htmlFor="username"
@@ -28,6 +53,9 @@ const Login = () => {
           </label>
           <input
             type="text"
+            name="email"
+            id="email"
+            placeholder="________@gmail.com"
             className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-lg dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
           />
         </div>
@@ -44,12 +72,15 @@ const Login = () => {
 
           <input
             type="password"
+            name="password"
+            id="password"
+            placeholder="*******"
             className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-lg dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
           />
         </div>
 
         <div className="mt-6">
-          <button className="w-full px-6 py-2.5 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-cyan-700 rounded-lg hover:bg-cyan-900 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-50">
+          <button type="submit" className="w-full px-6 py-2.5 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-cyan-700 rounded-lg hover:bg-cyan-900 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-50">
             Sign In
           </button>
         </div>
@@ -70,7 +101,8 @@ const Login = () => {
 
       <div className="flex items-center mt-6 -mx-2">
         <button
-          type="button"
+        onClick={() => handleGoogleSignIn()}
+          type="submit"
           className="flex items-center justify-center w-full px-6 py-2 mx-2 text-sm font-medium text-white transition-colors duration-300 transform bg-cyan-700 rounded-lg hover:bg-cyan-900 focus:bg-cyan-700 focus:outline-none"
         >
           <svg className="w-4 h-4 mx-2 fill-current" viewBox="0 0 24 24">
