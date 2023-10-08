@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom";
-import logo from "/public/logo.png";
+import { Link, NavLink } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../context/AuthProvider";
 
@@ -8,11 +7,51 @@ const Navbar = () => {
 
   const links = (
     <>
-      <Link to="/">Home</Link>
-      <Link to="/services">Services</Link>
-      <Link to="/gallery">Gallery</Link>
-      <Link to="/about">About</Link>
-      <Link to="/contact">Contact</Link>
+      <NavLink
+        style={({ isActive }) => ({
+          color: isActive ? "#706e75" : "#067c8a",
+          textDecorationLine: isActive ? "underline" : "none",
+        })}
+        to="/"
+      >
+        Home
+      </NavLink>
+      <NavLink
+        style={({ isActive }) => ({
+          color: isActive ? "#706e75" : "#067c8a",
+          textDecorationLine: isActive ? "underline" : "none",
+        })}
+        to="/services"
+      >
+        Services
+      </NavLink>
+      <NavLink
+        style={({ isActive }) => ({
+          color: isActive ? "#706e75" : "#067c8a",
+          textDecorationLine: isActive ? "underline" : "none",
+        })}
+        to="/gallery"
+      >
+        Gallery
+      </NavLink>
+      <NavLink
+        style={({ isActive }) => ({
+          color: isActive ? "#706e75" : "#067c8a",
+          textDecorationLine: isActive ? "underline" : "none",
+        })}
+        to="/about"
+      >
+        About
+      </NavLink>
+      <NavLink
+        style={({ isActive }) => ({
+          color: isActive ? "#706e75" : "#067c8a",
+          textDecorationLine: isActive ? "underline" : "none",
+        })}
+        to="/contact"
+      >
+        Contact
+      </NavLink>
     </>
   );
 
@@ -45,7 +84,7 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="">
-            <img className="w-32" src={logo} alt="" />
+            <img className="w-32" src="/logo.png" alt="" />
           </div>
         </div>
         <div className="navbar-center hidden lg:flex">

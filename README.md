@@ -1,8 +1,6 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# 3 Project features of EvenTree website:
+### 1. Without register or login no one can see the see details of the services. 
+### 2. the register page will show you a error message if the password is less than six digit, without one capital letter and one special character.    
+### 3. It will show a success toast when Register and Login succesful.
+### 4. One can login with their google accounts.
+### 5. It will show profile picture, the user name and the logout button on the header once login.
