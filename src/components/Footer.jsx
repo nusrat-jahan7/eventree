@@ -3,7 +3,7 @@ import { FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="bg-blue-100 font-poppins">
+    <div className=" font-poppins">
       <footer className="footer container mx-auto p-10 text-base-content">
         <nav className="text-cyan-700">
           <header className="footer-title">Services</header>
@@ -26,7 +26,7 @@ const Footer = () => {
           <a className="link link-hover">Cookie policy</a>
         </nav>
       </footer>
-      <footer className="space-y-5 container mx-auto py-4 border-t bg-blue-100 border-blue-300">
+      <footer className="space-y-5 container mx-auto py-4 border-t  border-blue-300">
         <img className="w-2/12 mx-auto" src={logo} alt="" />
         <div className="gap-4">
         <p className="text-cyan-700 text-center pb-7">

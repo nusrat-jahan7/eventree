@@ -8,6 +8,7 @@ import Contact from "../pages/Contact";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import ServiceDetails from "../pages/ServiceDetails";
+import PrivateRoute from "./PrivateRoute";
 
 export const router = createBrowserRouter([
   {
@@ -20,13 +21,12 @@ export const router = createBrowserRouter([
       },
       {
         path: "/services",
-        loader: () => fetch ("/services.json"),
-        element: <Services />,
+        element: <Services /> ,
       },
       {
         path: "/service-details/:id",
         loader: () => fetch ("/services.json"),
-        element: <ServiceDetails/>,
+        element: <PrivateRoute> <ServiceDetails/> </PrivateRoute>,
       },
       {
         path: "/gallery",

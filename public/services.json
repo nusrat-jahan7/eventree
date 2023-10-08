@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "1",
     "category": "Wedding",
     "title": "Elegant Beach Wedding",
     "description": "Celebrate your love with a romantic beach wedding. Exchange vows with the sound of waves in the background and enjoy a splendid sunset reception.",
@@ -14,7 +14,7 @@
     }
   },
   {
-    "id": 2,
+    "id": "2",
     "category": "Birthday",
     "title": "Superhero Themed Birthday Bash",
     "description": "Make your child's birthday unforgettable with a superhero-themed party. Let the kids embrace their favorite characters and enjoy a day of heroic adventures.",
@@ -28,7 +28,7 @@
       }
   },
   {
-    "id": 3,
+    "id": "3",
     "category": "Anniversary",
     "title": "Golden Years Celebration",
     "description": "Mark your milestone anniversary with a grand celebration. Rekindle your love story with a night of elegance, romantic ambiance, and heartwarming speeches.",
@@ -42,7 +42,7 @@
       }
   },
   {
-    "id": 4,
+    "id": "4",
     "category": "Baby Shower",
     "title": "Enchanted Garden Baby Shower",
     "description": "Welcome your little one with an enchanted garden-themed baby shower. Enjoy the beauty of nature, delightful games, and adorable baby-themed decor.",
@@ -56,7 +56,7 @@
       }
   },
   {
-    "id": 5,
+    "id": "5",
     "category": "Wedding",
     "title": "Rustic Barn Dream Wedding",
     "description": "Experience the charm of a rustic barn wedding. Celebrate amidst wooden beams, fairy lights, and the rustic aroma, creating an unforgettable atmosphere.",
@@ -70,7 +70,7 @@
       }
   },
   {
-    "id": 6,
+    "id": "6",
     "category": "Birthday",
     "title": "Princess Tea Birthday Party",
     "description": "Host a magical princess tea party for your little one's birthday. Let them indulge in a fairy tale world with fancy dresses, tea, and delightful sweets.",
@@ -84,7 +84,7 @@
     }
   },
   {
-    "id": 7,
+    "id": "7",
     "category": "Anniversary",
     "title": "Wine and Dine Under the Stars",
     "description": "Celebrate your anniversary with a romantic evening of wine tasting and fine dining under the stars. Enjoy exquisite wines paired with gourmet dishes.",
@@ -98,7 +98,7 @@
     }
   },
   {
-    "id": 8,
+    "id": "8",
     "category": "Baby Shower",
     "title": "Nautical Adventure Baby Shower",
     "description": "Embark on a nautical adventure for your baby shower. Set sail with anchor-themed decor, sailor outfits, and delightful maritime treats.",
@@ -112,7 +112,7 @@
     }
   },
   {
-    "id": 9,    
+    "id": "9",    
     "category": "Wedding",
     "title": "Countryside Romance Wedding",
     "description": "Experience the tranquility of the countryside with a romantic wedding. Surrounded by rolling hills and blooming flowers, celebrate your love story in nature's embrace.",
@@ -126,7 +126,7 @@
     }
   },
   {
-    "id": 10,
+    "id": "10",
     "category": "Birthday",
     "title": "Adventure Quest Birthday",    
     "description": "Embark on an adventure quest for a unique birthday experience. Solve puzzles, conquer challenges, and celebrate victories with your friends.",
@@ -140,7 +140,7 @@
     }
   },
   {
-    "id": 11,
+    "id": "11",
     "category": "Anniversary",
     "title": "Masquerade ball anniversary",
     "description": "Step into a world of mystery and elegance with a masquerade ball anniversary. Dance the night away behind ornate masks, surrounded by opulent decorations.",
@@ -154,7 +154,7 @@
       }
   },
   {
-    "id": 12,
+    "id": "12",
     "category": "Baby Shower",
     "title": "Safari Adventure Baby Shower",
     "description": "Embark on a safari adventure for your baby shower. Explore the wilderness with animal-themed decor, safari hats, and wild treats.",
@@ -168,7 +168,7 @@
       }
   },
   {
-    "id": 13,
+    "id": "13",
     "category": "Wedding",
     "title": "Enchanted Forest Wedding",
     "description": "Exchange vows in a mystical forest setting. Surrounded by ancient trees and twinkling fairy lights, create a magical ambiance for your wedding day.",
@@ -182,7 +182,7 @@
       }
   },
   {
-    "id": 14,
+    "id": "14",
     "category": "Birthday",
     "title": "Space Adventure Birthday",
     "description": "Blast off into a space-themed adventure for your birthday. Explore distant galaxies, meet aliens, and experience zero-gravity fun.",
@@ -196,7 +196,7 @@
       }
   },
   {
-    "id": 15,
+    "id": "15",
     "category": "Anniversary",
     "title": "Vintage Love Anniversary",
     "description": "Celebrate your enduring love with a vintage-themed anniversary. Travel back in time with retro music, classic cars, and timeless elegance.",
@@ -210,7 +210,7 @@
     }
   },
   {
-    "id": 16,
+    "id": "16",
     "category": "Baby Shower",
     "title": "Whimsical Wonderland Baby Shower",
     "description": "Enter a whimsical wonderland for your baby shower. Explore a world of fantasy with fairies, unicorns, and delightful magical surprises.",

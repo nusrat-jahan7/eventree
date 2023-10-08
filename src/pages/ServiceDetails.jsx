@@ -2,12 +2,13 @@ import { useLoaderData } from "react-router-dom";
 
 const ServiceDetails = () => {
   const allService = useLoaderData();
-  const serviceId = window.location.pathname.slice(-1);
+  const service = window.location.pathname.split("/");
+
+  const serviceId = service[service?.length-1]
 
   const currentService = allService.find(
-    (service) => service.id === +serviceId
+    (service) => service.id === serviceId
   );
-  console.log(currentService);
 
   const { category, title, image, price, description, features } =
     currentService;

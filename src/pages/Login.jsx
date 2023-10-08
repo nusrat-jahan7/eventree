@@ -1,10 +1,15 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import logo from "/public/logo.png"
 import { useContext } from "react";
 import { AuthContext } from "../context/AuthProvider";
 
 
 const Login = () => {
+
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const from = location.state?.from?.pathname || "/";
 
   const {signIn , googleSignIn} = useContext(AuthContext);
 
@@ -15,7 +20,10 @@ const handleEmailLogin = (event) => {
     const password = form.password.value ;
 
     signIn(email, password)
-    .then(result => console.log(result.user))
+    .then(result => {
+      console.log(result.user)
+      navigate (from, { replace : true });
+    })
     .catch(error => console.log(error))
 
     form.reset();
@@ -23,7 +31,10 @@ const handleEmailLogin = (event) => {
 
 const handleGoogleSignIn = () => {
   googleSignIn()
-  .then(result => console.log(result.user))
+  .then(result => {
+    console.log(result.user)
+    navigate (from, { replace : true });
+  })
   .catch(error => console.log(error))
 }
 
@@ -49,13 +60,13 @@ const handleGoogleSignIn = () => {
             htmlFor="username"
             className="block text-sm text-gray-800 dark:text-gray-200"
           >
-            Username
+           Email
           </label>
           <input
             type="text"
             name="email"
             id="email"
-            placeholder="________@gmail.com"
+            placeholder="example@gmail.com"
             className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-lg dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
           />
         </div>
@@ -81,7 +92,7 @@ const handleGoogleSignIn = () => {
 
         <div className="mt-6">
           <button type="submit" className="w-full px-6 py-2.5 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-cyan-700 rounded-lg hover:bg-cyan-900 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-50">
-            Sign In
+            Login
           </button>
         </div>
       </form>
@@ -120,7 +131,7 @@ const handleGoogleSignIn = () => {
           to="/register"
           className="font-medium text-cyan-700 dark:text-gray-200 hover:underline"
         >
-          Create One
+          Register
         </Link>
       </p>
     </div>
