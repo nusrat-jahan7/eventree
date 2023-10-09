@@ -7,13 +7,14 @@ import Contact from "../pages/Contact";
 import Login from "../pages/Login";
 import ServiceDetails from "../pages/ServiceDetails";
 import PrivateRoute from "./PrivateRoute";
-import LoginRoute from "./LoginRoute";
 import Register from "../pages/Register";
+import ErrorPage from "../pages/ErrorPage";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
@@ -35,27 +36,27 @@ export const router = createBrowserRouter([
       },
       {
         path: "/gallery",
-        element: <PrivateRoute><Gallery /></PrivateRoute> ,
+        element: (
+          <PrivateRoute>
+            <Gallery />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/contact",
-        element: <PrivateRoute><Contact /></PrivateRoute> ,
+        element: (
+          <PrivateRoute>
+            <Contact />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/login",
-        element: (
-          <LoginRoute>
-            <Login />
-          </LoginRoute>
-        ),
+        element: <Login />,
       },
       {
         path: "/register",
-        element: (
-          <LoginRoute>
-            <Register />
-          </LoginRoute>
-        ),
+        element: <Register />,
       },
     ],
   },

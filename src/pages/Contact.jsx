@@ -1,12 +1,11 @@
-
 const Contact = () => {
   return (
     <div className="bg-gray-100 font-poppins">
-      <div className="grid max-w-screen-xl grid-cols-1 gap-12 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 dark:bg-gray-800 dark:text-gray-100">
+      <div className="grid max-w-screen-xl grid-cols-1 gap-12 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32">
         <div className="flex flex-col justify-between">
           <div className="space-y-2">
-            <h2 className="text-4xl text-cyan-700 font-bold leadi lg:text-5xl">
-              Let's talk!
+            <h2 className="text-4xl text-cyan-700 font-bold lg:text-5xl">
+              {"Let's talk!"}
             </h2>
             <div className="text-gray-500">
               Do you want to know more about us?
@@ -25,7 +24,9 @@ const Contact = () => {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                <span>Florida, A City, 32104 <br /> United States of America </span>
+                <span>
+                  Florida, A City, 32104 <br /> United States of America{" "}
+                </span>
               </p>
               <p className="flex items-center">
                 <svg

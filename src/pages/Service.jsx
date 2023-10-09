@@ -1,8 +1,13 @@
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 /* eslint-disable react/prop-types */
 const Service = ({ service }) => {
-  // console.log(service);
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   const { id, title, price, image, description } = service;
 

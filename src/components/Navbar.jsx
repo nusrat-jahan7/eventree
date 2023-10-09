@@ -46,9 +46,11 @@ const Navbar = () => {
     </>
   );
 
+  console.log(user);
+
   return (
-    <nav className="drop-shadow-lg">
-      <div className="navbar container py-5 mx-auto font-poppins">
+    <nav className="drop-shadow-lg relative">
+      <div className="navbar container py-5 mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -69,28 +71,58 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-md text-lg dropdown-content mt-3 z-50 p-2 shadow bg-base-100 rounded-box w-36"
             >
               {links}
             </ul>
           </div>
-          <div className="">
+          <Link to={"/"} className="">
             <img className="w-32" src="/logo.png" alt="" />
-          </div>
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal gap-10 px-1 font-medium text-lg text-cyan-700">
             {links}
           </ul>
         </div>
-        <div className="navbar-end ">
+        <div className="navbar-end">
           {user?.email ? (
-            <button
-              onClick={() => logOut()}
-              className="bg-cyan-700 btn font-semibold border-0 hover:bg-cyan-900 text-white"
-            >
-              Log out
-            </button>
+            <div className="flex items-center gap-2">
+              <p className="justify-between font-semibold">
+                {user?.displayName?.split(" ")[0] ?? "User"}
+              </p>
+              <div className="w-10 rounded-full">
+                <img
+                  className="rounded-full"
+                  src={user?.photoURL ?? "user.jpg"}
+                />
+              </div>
+              <button
+                onClick={() => logOut()}
+                className="hidden sm:block bg-cyan-700 btn font-semibold border-0 hover:bg-cyan-900 text-white"
+              >
+                Logout
+              </button>
+              <button
+                onClick={() => logOut()}
+                className="bg-cyan-700 rounded-full p-2 sm:hidden"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6 text-white"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9"
+                  />
+                </svg>
+              </button>
+            </div>
           ) : (
             <Link
               to="/login"
